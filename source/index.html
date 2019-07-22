@@ -5,8 +5,181 @@
     <title>HTML Academy: Погнали</title>
   </head>
   <body>
+    <header class="page-header">
+      <a class="page-header__logo-text" href="#">Погнали?</a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню  </button>
+        <div class="main-nav_item">О сервисе направления попутчики</div>
+        <button class="main-nav_item" type="button">Авторизация</button>
+        <div class="main-nav_item">8 800 555-86-28</div>
+        <div class="main-nav_item">mail@htmlacademy.ru</div>
+        <ul class="main-nav_item">
+          <li class="main-nav_item-social"></li>
+          <li class="main-nav_item-social"></li>
+          <li class="main-nav_item-social"></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-main">
+      <header class="page-main__header">
+        <div class="page-main__header-slogan">В путешествие
+          с крутыми попутчиками!</div>
+        <a class="page-main__header-phone" href="#"></a>
+        <a class="page-main__header-email" href="#"></a>
+        <button class="page-main__header-login" type="button">Авторизация</button>
+      </header>
+      <section class="review">
+        <p class="rewiew-text">«Лучшее приложение,
+          что я видел в жизни!»</p>
+        <p class="rewiew-author">Мурат Эльтазин главный редактор
+          газеты «гаджетлайф»</p>
+      </section>
+      <table class="intro__list">
+        <tr>
+          <td class="intro__text">
+            Выберите направление
+          </td>
+          <td class="intro__num">
+            1
+          </td>
+        </tr>
+        <tr>
+          <td class="intro__text">
+            Изучите идеи путешественников
+          </td>
+          <td class="intro__num">
+            2
+          </td>
+        </tr>
+        <tr>
+          <td class="intro__text">
+            Находите тех, кто похож на вас
+          </td>
+          <td class="intro__num">
+            3
+          </td>
+        </tr>
+        <tr>
+          <td class="intro__text">
+            Путешествуйте вместе
+          </td>
+          <td class="intro__num">
+            4
+          </td>
+        </tr>
+      </table>
+      <section class="about">
+        <h2 class="about__title">О сервисе</h2>
+        <p class="about__text">Любое путешествие веселее
+          с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
+          <span>А если найдете кого-то
+            близкого по духу — скорее
+            зовите в совместный трип!</span>
+        </p>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+      </section>
+      <section class="countries">
+        <h2 class="countries__title">
+          Направления
+        </h2>
+        <p class="countries__text">
+          Мы не продаем туры
+          и ничего не рекламируем.
+          Люди сами пишут о странах, куда хотели бы отправиться
+          и чем можно там заняться.
+        </p>
+        <ul class="countries__list">
+          <li class="countries__item">
+            <ul class="countries__item-desrc">
+              <li class="countries__item-desrc__title"> Тайланд <span>Джунгли зовут!</span></li>
+              <li class="countries__item-desrc__counter">18321</li>
+            </ul>
+          </li>
+          <li class="countries__item">
+            <ul class="countries__item-desrc">
+              <li class="countries__item-desrc__title"> Франция <span>Трэ бьен, манифик!</span></li>
+              <li class="countries__item-desrc__counter">12518</li>
+            </ul>
+          </li>
+          <li class="countries__item">
+            <ul class="countries__item-desrc">
+              <li class="countries__item-desrc__title"> Чехия <span>Закоулки старой Европы</span></li>
+              <li class="countries__item-desrc__counter">5326</li>
+            </ul>
+          </li>
+        </ul>
+        <button class="countries__button" type="button">Показать все</button>
+      </section>
+      <section class="travelers">
+        <h2 class="travelers__title">
+          Попутчики
+        </h2>
+        <p class="travelers__text">
+          Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
+          <span>
+            Теперь можно легко найти единомышленников!
+          </span>
+        </p>
+        <ul class="travelers__list">
+          <li class="travelers_item">
+            <ul class="travelers__item-desrc">
+              <li class="travelers__item-desrc__img"><img src="img/" alt="Путешественник"></li>
+              <li class="travelers__item-desrc__title">Таня Фирсова<span>#30Ж #ПП #Фитнес #пляж #авокадо #смузи</span></li>
+              <li class="travelers__item-desrc__ways">
+                <div class="travelers__item-desrc__ways-fly"></div>
+                <div class="travelers__item-desrc__ways-bus"></div>
+                <div class="travelers__item-desrc__ways-bike"></div>
+                <div class="travelers__item-desrc__ways-afoot"></div>
+              </li>
+            </ul>
+          </li>
+          <li class="travelers_item">
+            <ul class="travelers__item-desrc">
+              <li class="travelers__item-desrc__img"><img src="img/" alt="Путешественник"></li>
+              <li class="travelers__item-desrc__title">Петя Демин<span>#Бургер #бар #футбол #концерт #крафт </span></li>
+              <li class="travelers__item-desrc__ways">
+                <div class="travelers__item-desrc__ways-fly"></div>
+                <div class="travelers__item-desrc__ways-bus"></div>
+                <div class="travelers__item-desrc__ways-bike"></div>
+                <div class="travelers__item-desrc__ways-afoot"></div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <button class="travelers__button" type="button">Показать всех</button>
+      </section>
+      <section class="rates">
+        <h2 class="rates__title">Добавьте свой профиль</h2>
+        <ul class="rates__list">
+          <li class="rates__item">Базовое размещение
+            Бесплатно <span>1</span></li>
+          <li class="rates__item">Вывод на первых позициях
+            99 руб./мес <span>2</span></li>
+          <li class="rates__item">Кастомный цвет карточки
+            59 руб./мес <span>3</span></li>
+        </ul>
+        <button class="rates__button" type="button">Показать всех</button>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <p class="page-footer__title">Погнали?</p>
+      <div class="page-footer__social social">
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+        </li>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </footer>
   </body>
 </html>

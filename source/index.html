@@ -2,39 +2,45 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Погнали</title>
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo-text" href="#">Погнали?</a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню  </button>
-        <div class="main-nav_item">О сервисе направления попутчики</div>
-        <button class="main-nav_item" type="button">Авторизация</button>
-        <div class="main-nav_item">8 800 555-86-28</div>
-        <div class="main-nav_item">mail@htmlacademy.ru</div>
-        <ul class="main-nav_item">
-          <li class="main-nav_item-social"></li>
-          <li class="main-nav_item-social"></li>
-          <li class="main-nav_item-social"></li>
+      <a class="logo page-header__logo" href="#">Погнали?</a>
+
+      <nav class="page-header__main-nav">
+        <button class="page-header__toggle" type="button">Открыть меню  </button>
+        <ul class="page-header__menu site-menu">
+          <li class="site-menu__title">О сервисе направления попутчики</li>
+          <li class="site-menu__button"><button class="button" type="button">Авторизация</button></li>
+          <li class="site-menu__item phone"><a href="tel:88005558628">8 800 555-86-28</a></li>
+          <li class="site-menu__item email"><a href="email:mail@htmlacademy.ru">mail@htmlacademy.ru</a></li>
+          <li class="site-menu__item social">
+            <ul class="social__list">
+              <li class="social__item"><a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a></li>
+              <li class="social__item"><a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a></li>
+              <li class="social__item"><a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a></li>
+            </ul>
+          </li>
         </ul>
       </nav>
     </header>
     <main class="page-main">
-      <header class="page-main__header">
-        <div class="page-main__header-slogan">В путешествие
+      <section class="page-main__header head-content">
+        <div class="head-content__title">В путешествие
           с крутыми попутчиками!</div>
-        <a class="page-main__header-phone" href="#"></a>
-        <a class="page-main__header-email" href="#"></a>
-        <button class="page-main__header-login" type="button">Авторизация</button>
-      </header>
-      <section class="review">
-        <p class="rewiew-text">«Лучшее приложение,
+        <a class="head-content__header-phone" href="#"></a>
+        <a class="head-content__header-email" href="#"></a>
+        <button class="head-content__header-login button" type="button">Авторизация</button>
+      </section>
+      <section class="page-main__review review">
+        <p class="rewiew__text">«Лучшее приложение,
           что я видел в жизни!»</p>
-        <p class="rewiew-author">Мурат Эльтазин главный редактор
+        <p class="rewiew__author">Мурат Эльтазин главный редактор
           газеты «гаджетлайф»</p>
       </section>
-      <table class="intro__list">
+      <table class="page-main__intro intro">
         <tr>
           <td class="intro__text">
             Выберите направление
@@ -68,7 +74,7 @@
           </td>
         </tr>
       </table>
-      <section class="about">
+      <section class="page-main__about about">
         <h2 class="about__title">О сервисе</h2>
         <p class="about__text">Любое путешествие веселее
           с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
@@ -76,9 +82,8 @@
             близкого по духу — скорее
             зовите в совместный трип!</span>
         </p>
-
       </section>
-      <section class="countries">
+      <section class="page-main__countries countries">
         <h2 class="countries__title">
           Направления
         </h2>
@@ -89,28 +94,16 @@
           и чем можно там заняться.
         </p>
         <ul class="countries__list">
-          <li class="countries__item">
-            <ul class="countries__item-desrc">
-              <li class="countries__item-desrc__title"> Тайланд <span>Джунгли зовут!</span></li>
-              <li class="countries__item-desrc__counter">18321</li>
-            </ul>
-          </li>
-          <li class="countries__item">
-            <ul class="countries__item-desrc">
-              <li class="countries__item-desrc__title"> Франция <span>Трэ бьен, манифик!</span></li>
-              <li class="countries__item-desrc__counter">12518</li>
-            </ul>
-          </li>
-          <li class="countries__item">
-            <ul class="countries__item-desrc">
-              <li class="countries__item-desrc__title"> Чехия <span>Закоулки старой Европы</span></li>
-              <li class="countries__item-desrc__counter">5326</li>
-            </ul>
-          </li>
+          <li class="countries__item"> Тайланд <span>Джунгли зовут!</span></li>
+          <li class="countries__count">18321</li>
+          <li class="countries__item-"> Франция <span>Трэ бьен, манифик!</span></li>
+          <li class="countries__count">12518</li>
+          <li class="countries__item"> Чехия <span>Закоулки старой Европы</span></li>
+          <li class="countries__count">5326</li>
         </ul>
-        <button class="countries__button" type="button">Показать все</button>
+        <button class="countries__button btn" type="button">Показать все</button>
       </section>
-      <section class="travelers">
+      <section class="page-main__travelers travelers">
         <h2 class="travelers__title">
           Попутчики
         </h2>
@@ -121,34 +114,45 @@
           </span>
         </p>
         <ul class="travelers__list">
-          <li class="travelers_item">
-            <ul class="travelers__item-desrc">
-              <li class="travelers__item-desrc__img"><img src="img/" alt="Путешественник"></li>
-              <li class="travelers__item-desrc__title">Таня Фирсова<span>#30Ж #ПП #Фитнес #пляж #авокадо #смузи</span></li>
-              <li class="travelers__item-desrc__ways">
-                <div class="travelers__item-desrc__ways-fly"></div>
-                <div class="travelers__item-desrc__ways-bus"></div>
-                <div class="travelers__item-desrc__ways-bike"></div>
-                <div class="travelers__item-desrc__ways-afoot"></div>
+          <li class="travelers__item traveler-card">
+            <ul class="traveler-card__item-desrc">
+              <li class="traveler-card__picture"><img src="img/" alt="Путешественник"></li>
+              <li class="traveler-card__level">99 <span>level</span></li>
+              <li class="traveler-card__countries-flags">
+                <div class="traveler-card__flag shri-lanka-flag"></div>
+                <div class="traveler-card__flag tailand-flag"></div>
+                <div class="traveler-card__flag seychelles-flag"></div>
+              </li>
+              <li class="traveler-card__title">Таня Фирсова<span>#30Ж #ПП #Фитнес #пляж #авокадо #смузи</span></li>
+              <li class="traveler-card__trip-ways">
+                <div class="traveler-card__fly fly"></div>
+                <div class="traveler-card__bus"></div>
+                <div class="traveler-card__bike"></div>
+                <div class="traveler-card__afoot"></div>
               </li>
             </ul>
           </li>
-          <li class="travelers_item">
-            <ul class="travelers__item-desrc">
-              <li class="travelers__item-desrc__img"><img src="img/" alt="Путешественник"></li>
-              <li class="travelers__item-desrc__title">Петя Демин<span>#Бургер #бар #футбол #концерт #крафт </span></li>
+          <li class="travelers__item traveler-card">
+            <ul class="traveler-card__item-desrc">
+              <li class="traveler-card__picture"><img src="img/" alt="Путешественник"></li>
+              <li class="traveler-card__level">80 <span>level</span></li>
+              <li class="traveler-card__countries-flags">
+                <div class="traveler-card__flag germany-flag"></div>
+                <div class="traveler-card__flag chech-flag"></div>
+              </li>
+              <li class="traveler-card__title">Петя Демин<span>#Бургер #бар #футбол #концерт #крафт </span></li>
               <li class="travelers__item-desrc__ways">
-                <div class="travelers__item-desrc__ways-fly"></div>
-                <div class="travelers__item-desrc__ways-bus"></div>
-                <div class="travelers__item-desrc__ways-bike"></div>
-                <div class="travelers__item-desrc__ways-afoot"></div>
+                <div class="travelers__card-fly fly"></div>
+                <div class="travelers__card-bus bus"></div>
+                <div class="travelers__card-bike"></div>
+                <div class="travelers__card-afoot afoot"></div>
               </li>
             </ul>
           </li>
         </ul>
-        <button class="travelers__button" type="button">Показать всех</button>
+        <button class="travelers__button btn" type="button">Показать всех</button>
       </section>
-      <section class="rates">
+      <section class="page-main__rates rates">
         <h2 class="rates__title">Добавьте свой профиль</h2>
         <ul class="rates__list">
           <li class="rates__item">Базовое размещение
@@ -160,9 +164,32 @@
         </ul>
         <button class="rates__button" type="button">Показать всех</button>
       </section>
+
+      <section class="page-main__registry registry">
+        <h2 class="registry__title">Заинтересовались?</h2>
+        <p class="registry__text">Зарегистрируйтесь,
+          это быстро и бесплатно!
+          Уже зарегистрированы? Тогда скорее <a href="autorisation-form.html">авторизуйтесь.</a></p>
+        <form action="." class="registry__string">
+          <input class="registry__field" type="email" name="email" placeholder="E-mail">
+          <input class="registry__button" type="submit" name="submit">
+        </form>
+        <p class="registry__text">Остались вопросы?
+          Мы с радостью на них ответим!</p>
+        <a class="registry__item phone" href="tel:88005558628">8 800 555-86-28</a>
+        <a class="registry__item email" href="email:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      </section>
+      <section class="page-main__route route">
+        <address>
+          <a class="route__addr" href="">ул. Большая
+            Конюшенная, 19/8</a>
+        </address>
+        <button class="route__button btn" type="button">Показать всех</button>
+        <div class="route__map"><img src="/img/" alt=""></div>
+      </section>
     </main>
     <footer class="page-footer">
-      <p class="page-footer__title">Погнали?</p>
+      <p class=" logo page-footer__logo">Погнали?</p>
       <div class="page-footer__social social">
         <li class="social__item">
           <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>

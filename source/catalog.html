@@ -2,71 +2,74 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Погнали</title>
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo-text" href="#">Погнали?</a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню  </button>
-        <div class="main-nav_item">О сервисе направления попутчики</div>
-        <button class="main-nav_item" type="button">Авторизация</button>
-        <div class="main-nav_item">8 800 555-86-28</div>
-        <div class="main-nav_item">mail@htmlacademy.ru</div>
-        <ul class="main-nav_item">
-          <li class="main-nav_item-social"></li>
-          <li class="main-nav_item-social"></li>
-          <li class="main-nav_item-social"></li>
+      <a class="logo page-header__logo" href="#">Погнали?</a>
+      <nav class="page-header__main-nav">
+        <button class="page-header__toggle" type="button">Открыть меню  </button>
+        <ul class="page-header__menu site-menu">
+          <li class="site-menu__title">О сервисе направления попутчики</li>
+          <li class="site-menu__button"><button class="button" type="button">Авторизация</button></li>
+          <li class="site-menu__item phone"><a href="tel:88005558628">8 800 555-86-28</a></li>
+          <li class="site-menu__item email"><a href="email:mail@htmlacademy.ru">mail@htmlacademy.ru</a></li>
+          <li class="site-menu__item social">
+            <ul class="social__list">
+              <li class="social__item"><a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a></li>
+              <li class="social__item"><a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a></li>
+              <li class="social__item"><a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a></li>
+            </ul>
+          </li>
         </ul>
       </nav>
     </header>
     <main class="page-catalog">
-      <header class="page-catalog__header">
-        <div class="page-catalog__header-title">Попутчики</div>
-      </header>
-      <ul class="catalog-travelers">
-        <li class="catalog-travelers__item">
+      <h2 class="page-catalog__header-title">Попутчики</h2>
+      <ul class="page-catalog__travelers-list travelers-list">
+        <li class="travelers-list__item">
           <ul>
-            <li class="catalog-travelers__item-name"><img src="img/" alt="Путешественник">  <p>Таня Фирсова <span>1,5 М</span></p> </li>
-            <li class="catalog-travelers__item-tags">#30Ж #ПП #Фитнес #пляж #авокадо #смузи</li>
-            <li class="catalog-travelers__item-countries">
+            <li class="travelers-list__item-name"><img src="img/" alt="Путешественник">  <p>Таня Фирсова <span>1,5 М</span></p> </li>
+            <li class="travelers-list__item-tags">#30Ж #ПП #Фитнес #пляж #авокадо #смузи</li>
+            <li class="travelers-list__item-countries">
               <p>Хочет посетить:</p>
-              <div class="shri-lanka">Шри ланка</div>
-              <div class="tailand">Тайланд</div>
-              <div class="seishels">Сейшелы</div>
+              <div class="shri-lanka-flag">Шри ланка</div>
+              <div class="tailand-flag">Тайланд</div>
+              <div class="seishels-flag">Сейшелы</div>
+            </li>
+            <li class="travelers-list__item-descr">транспорт: <span>левел:</span></li>
+            <li>
+              <div class="travelers-list__item-fly fly"></div>
+              <div class="travelers-list__item-bus"></div>
+              <div class="travelers-list__item-bike"></div>
+              <div class="travelers-list__item-afoot"></div>
+              <div class="travelers-list__item-level">99</div>
+            </li>
+            <li><button class="travelers-list__button button" type="button">Позвать!</button></li>
+          </ul>
+        </li>
+        <li class="travelers-list__item">
+          <ul>
+            <li class="travelers-list__item-name"><img src="img/" alt="Путешественник">  <p>Петя Демин <span>150</span></p> </li>
+            <li class="travelers-list__item-tags">#Бургер #бар #футбол #концерт #крафт</li>
+            <li class="travelers-list__item-countries">
+              <p>Хочет посетить:</p>
+              <div class="belgium-flag">Бельгия</div>
+              <div class="czech-flag">Чехия</div>
             </li>
             <li class="catalog-travelers__item-descr">транспорт: <span>левел:</span></li>
             <li>
-              <div class="catalog-travelers__item-fly"></div>
-              <div class="catalog-travelers__item-bus"></div>
-              <div class="catalog-travelers__item-bike"></div>
-              <div class="catalog-travelers__item-afoot"></div>
-              <div class="catalog-travelers__item-level">99</div>
+              <div class="travelers-list__item-fly fly"></div>
+              <div class="travelers-list__item-bus bus"></div>
+              <div class="travelers-list__item-bike"></div>
+              <div class="travelers-list__item-afoot afoot"></div>
+              <div class="travelers-list__item-level">80</div>
             </li>
-            <li><button class="catalog-travelers__button" type="button">Позвать!</button></li>
+            <li><button class="travelers-list__button button" type="button">Позвать!</button></li>
           </ul>
         </li>
-        <li class="catalog-travelers__item">
-          <ul>
-            <li class="catalog-travelers__item-name"><img src="img/" alt="Путешественник">  <p>Петя Демин <span>150</span></p> </li>
-            <li class="catalog-travelers__item-tags">#Бургер #бар #футбол #концерт #крафт</li>
-            <li class="catalog-travelers__item-countries">
-              <p>Хочет посетить:</p>
-              <div class="shri-lanka">Бельгия</div>
-              <div class="czech">Чехия</div>
-            </li>
-            <li class="catalog-travelers__item-descr">транспорт: <span>левел:</span></li>
-            <li>
-              <div class="catalog-travelers__item-fly"></div>
-              <div class="catalog-travelers__item-bus"></div>
-              <div class="catalog-travelers__item-bike"></div>
-              <div class="catalog-travelers__item-afoot"></div>
-              <div class="catalog-travelers__item-level">80</div>
-            </li>
-            <li><button class="catalog-travelers__button" type="button">Позвать!</button></li>
-          </ul>
-        </li>
-        <li class="catalog-travelers__item">
+        <li class="travelers-list__item">
           <ul>
             <li class="catalog-travelers__item-name"><img src="img/" alt="Путешественник">  <p>Марк Смолов<span>1700</span></p> </li>
             <li class="catalog-travelers__item-tags">#рэп #тату #хайпбист #кроссовки #суприм </li>
@@ -78,42 +81,42 @@
             </li>
             <li class="catalog-travelers__item-descr">транспорт: <span>левел:</span></li>
             <li >
-              <div class="catalog-travelers__item-fly"></div>
+              <div class="catalog-travelers__item-fly fly"></div>
               <div class="catalog-travelers__item-bus"></div>
-              <div class="catalog-travelers__item-bike"></div>
+              <div class="catalog-travelers__item-bike bike"></div>
               <div class="catalog-travelers__item-afoot"></div>
               <div class="catalog-travelers__item-level">25</div>
             </li>
-            <li><button class="catalog-travelers__button" type="button">Позвать!</button></li>
+            <li><button class="catalog-travelers__button button" type="button">Позвать!</button></li>
           </ul>
         </li>
-        <li class="catalog-travelers__item">
+        <li class="travelers-list__item">
           <ul>
-            <li class="catalog-travelers__item-name"><img src="img/" alt="Путешественник">  <p>Лариса Роговая<span>23</span></p> </li>
-            <li class="catalog-travelers__item-tags">#образование #карьера #учеба #линкэдин </li>
-            <li class="catalog-travelers__item-countries">
+            <li class="travelers-list__item-name"><img src="img/" alt="Путешественник">  <p>Лариса Роговая<span>23</span></p> </li>
+            <li class="travelers-list__item-tags">#образование #карьера #учеба #линкэдин </li>
+            <li class="travelers-list__item-countries">
               <p>Хочет посетить:</p>
               <div class="britain">Великобритания</div>
               <div class="germany">Германия</div>
             </li>
-            <li class="catalog-travelers__item-descr">транспорт: <span>левел:</span></li>
-            <li class="catalog-travelers__item-ways">
-              <div class="catalog-travelers__item-fly"></div>
-              <div class="catalog-travelers__item-bus"></div>
-              <div class="catalog-travelers__item-bike"></div>
-              <div class="catalog-travelers__item-afoot"></div>
-              <div class="catalog-travelers__item-level">50</div>
+            <li class="travelers-list__item-descr">транспорт: <span>левел:</span></li>
+            <li class="travelers-list__item-ways">
+              <div class="travelers-list__item-fly fly"></div>
+              <div class="travelers-list__item-bus bus"></div>
+              <div class="travelers-list__item-bike"></div>
+              <div class="travelers-list__item-afoot"></div>
+              <div class="travelers-list__item-level">50</div>
             </li>
-            <li><button class="catalog-travelers__button" type="button">Позвать!</button></li>
+            <li><button class="travelers-list__button button" type="button">Позвать!</button></li>
           </ul>
         </li>
       </ul>
-      <button class="catalog-travelers__more">Показать еще</button>
-      <div class="catalog-travelers__next">Далее</div>
-      <div class="catalog-travelers__back">Назад</div>
+      <button class="page-catalog__more">Показать еще</button>
+      <div class="page-catalog__next">Далее</div>
+      <div class="page-catalog__back">Назад</div>
     </main>
     <footer class="page-footer">
-      <p class="page-footer__title">Погнали?</p>
+      <p class=" logo page-footer__logo">Погнали?</p>
       <div class="page-footer__social social">
         <li class="social__item">
           <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>

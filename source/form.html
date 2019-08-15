@@ -2,21 +2,27 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Погнали</title>
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo-text" href="#">Погнали?</a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню  </button>
-        <div class="main-nav_item">О сервисе направления попутчики</div>
-        <button class="main-nav_item" type="button">Авторизация</button>
-        <div class="main-nav_item">8 800 555-86-28</div>
-        <div class="main-nav_item">mail@htmlacademy.ru</div>
-        <ul class="main-nav_item">
-          <li class="main-nav_item-social"></li>
-          <li class="main-nav_item-social"></li>
-          <li class="main-nav_item-social"></li>
+      <a class="logo page-header__logo" href="#">Погнали?</a>
+
+      <nav class="page-header__main-nav">
+        <button class="page-header__toggle" type="button">Открыть меню  </button>
+        <ul class="page-header__menu site-menu">
+          <li class="site-menu__title">О сервисе направления попутчики</li>
+          <li class="site-menu__button"><button class="button" type="button">Авторизация</button></li>
+          <li class="site-menu__item phone"><a href="tel:88005558628">8 800 555-86-28</a></li>
+          <li class="site-menu__item email"><a href="email:mail@htmlacademy.ru">mail@htmlacademy.ru</a></li>
+          <li class="site-menu__item social">
+            <ul class="social__list">
+              <li class="social__item"><a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a></li>
+              <li class="social__item"><a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a></li>
+              <li class="social__item"><a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a></li>
+            </ul>
+          </li>
         </ul>
       </nav>
     </header>
@@ -27,7 +33,7 @@
 
     </main>
     <footer class="page-footer">
-      <p class="page-footer__title">Погнали?</p>
+      <p class=" logo page-footer__logo">Погнали?</p>
       <div class="page-footer__social social">
         <li class="social__item">
           <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>

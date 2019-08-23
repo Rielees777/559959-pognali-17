@@ -1,0 +1,46 @@
+.route {
+  padding: 0 25px;
+  padding-bottom: 25px;
+  background-color: @btn-color;
+
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.route__addr {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 32px;
+  padding-top:20px;
+  padding-left: 75px;
+
+  font-family: @main-font;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #121936;
+}
+.route__addr::before{
+  position: absolute;
+  content: '';
+  width: 45px;
+  height: 45px;
+  left: 15px;
+  top: 18px;
+  border-radius: 50%;
+
+  background-color:#121936;
+  background-image: url(/source/img/contacts-location.svg);
+  background-repeat: no-repeat;
+  background-size: 14px 22px;
+  background-position: 15px 12px;
+}
+.route__button {
+  border: 3px solid #121936;
+}
+.route__map {
+  padding: 25px;
+}

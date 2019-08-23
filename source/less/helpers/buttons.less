@@ -1,0 +1,86 @@
+.button {
+  border: none;
+  background-color: @btn-color;
+
+  font-family:"Bloggersans", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+  color: @main-color;
+  text-transform: uppercase;
+
+  border-radius: 50px;
+}
+.phone,
+.email {
+  position: relative;
+
+  font-family:"Bloggersans", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+
+  text-decoration: none;
+
+}
+
+.phone::before {
+  content: "";
+  position: absolute;
+
+  width: 45px;
+  height: 45px;
+  top: -16px;
+  left: -60px;
+
+  border-radius: 50%;
+  background-color: @main-color;
+  background-image: url(/source/img/contacts-phone.svg);
+  background-repeat: no-repeat;
+  background-position: 13px 13px;
+  background-size: 18px 18px;
+}
+.email::before {
+  content: "";
+  position: absolute;
+
+  width: 45px;
+  height: 45px;
+  top: -16px;
+  left: -60px;
+
+  border-radius: 50%;
+  background-color: @main-color;
+  background-image: url(/source/img/contacts-mail.svg);
+  background-repeat: no-repeat;
+  background-position: 13px 13px;
+  background-size: 18px 18px;
+}
+.btn {
+  position: relative;
+  width: 270px;
+  padding: 20px  25px;
+
+  border: none;
+  background-color: #ffd74b;
+
+  border-radius: 10px;
+
+  font-family: @main-font;
+  font-weight: bold;
+  text-align: left;
+  color: @main-color;
+  font-size: 18px;
+  line-height: 18px;
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 14px;
+  top: 22px;
+  left: 235px;
+
+  background-image: url(/source/img/triangle-arrow-right.svg);
+}

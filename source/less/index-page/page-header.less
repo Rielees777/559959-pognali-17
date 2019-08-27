@@ -1,10 +1,8 @@
 body {
-  margin: 0;
-  padding: 0;
+  .offset();
 }
 .page-header {
-  padding: 0;
-  margin: 0;
+  .offset();
   width: 320px;
 }
 
@@ -20,16 +18,15 @@ body {
 }
 .page-header__main-nav {
 
-  margin: 0;
-  padding: 0;
+  .offset();
   padding-top: 25px;
   background-color: @main-color;
 }
 .page-header__toggle {
-  padding: 0;
+  .offset();
   padding-left: 270px;
   padding-top: 5px;
-  margin: 0;
+
   border: none;
   background:none;
 
@@ -38,9 +35,8 @@ body {
 }
 .site-menu {
   display: none;
-  padding: 0 25px;
+  .offset();
   position: absolute;
-  padding: 0;
   padding-bottom: 80px;
 
   list-style: none;
@@ -49,6 +45,7 @@ body {
 }
 .site-menu__title {
   width: 320px;
+  .offset();
   margin-bottom: 60px;
 
   color: @main-color;
@@ -66,9 +63,8 @@ body {
   margin-bottom: 70px;
 }
 .site-menu__btn {
-  padding: 0;
-  margin: 0;
-  padding-left: 25px;
+  .offset();
+  padding: 0 25px;
 }
 .site-menu__item {
   padding-left: 75px;

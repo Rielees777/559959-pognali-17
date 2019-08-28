@@ -1,0 +1,120 @@
+body {
+  .offset();
+}
+.page-header {
+  .offset();
+  width: 320px;
+}
+
+.logo {
+  padding: 0 25px;
+}
+.page-header__logo {
+  padding-top: 25px;
+  position: absolute;
+  background-image: url(/source/img/globe-back-mobile@1x.jpg);
+  background-repeat: no-repeat;
+
+}
+.page-header__main-nav {
+
+  .offset();
+  padding-top: 25px;
+  background-color: @main-color;
+}
+.page-header__toggle {
+  .offset();
+  padding-left: 270px;
+  padding-top: 5px;
+
+  border: none;
+  background:none;
+
+  cursor: pointer;
+
+}
+.site-menu {
+  display: none;
+  .offset();
+  position: absolute;
+  padding-bottom: 80px;
+
+  list-style: none;
+  background-color: #ffffff;
+  z-index: 999;
+}
+.site-menu__title {
+  width: 320px;
+  .offset();
+  margin-bottom: 60px;
+
+  color: @main-color;
+  font-family: @main-font;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.site-menu__button {
+  width: 270px;
+  height: 50px;
+
+  margin-bottom: 70px;
+}
+.site-menu__btn {
+  .offset();
+  padding: 0 25px;
+}
+.site-menu__item {
+  padding-left: 75px;
+  margin-bottom: 23px;
+
+  text-align: left;
+
+}
+.site-menu__item a{
+  color: @main-color;
+}
+.social__list {
+  display: flex;
+  position: relative;
+  padding: 0;
+
+  list-style: none;
+}
+.social__link {
+  position: absolute;
+
+  opacity: 0.3;
+}
+.site-menu__social {
+  padding-left: 20px;
+}
+.social__link--facebook {
+  left: 60px;
+  width: 50px;
+  height: 40px;
+  background-image: url(/source/img/facebook.svg);
+  background-size: 11px 21px;
+  background-position: 17px 10px;
+  background-repeat: no-repeat;
+}
+.social__link--vkontakte {
+  left: 105px;
+  width: 50px;
+  height: 40px;
+  background-image: url(/source/img/vk.svg);
+  background-size: 23px 12px;
+  background-position: 11px 16px;
+  background-repeat: no-repeat;
+}
+.social__link--instagram {
+  left: 150px;
+  width: 50px;
+  height: 40px;
+  background-image: url(/source/img/instagram.svg);
+  background-size: 18px 18px;
+  background-position: 13px 13px;
+  background-repeat: no-repeat;
+}

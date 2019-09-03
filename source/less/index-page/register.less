@@ -24,7 +24,7 @@
 
   color: #ffffff;
 }
-.registry__text a {
+.registry__text--link {
   color: @btn-color;
 }
 .registry__string{
@@ -62,4 +62,47 @@
 }
 .registry__item a {
   color: @btn-color;
+}
+@media (min-width: @tablet-width){
+  .registry {
+    padding: 0 75px;
+    padding-top: 80px;
+    padding-bottom: 85px;
+
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+  .registry__title {
+    font-size: 45px;
+    line-height: 45px;
+  }
+  .registry__text {
+    font-size: 28px;
+    line-height: 33px;
+  }
+  .registry__field {
+    width: 618px;
+    height: 81px;
+
+    border-radius: 20px;
+  }
+  .registry__button {
+    position: absolute;
+    width: 82px;
+    height: 83px;
+    top: 0px;
+    left: 576px;
+    border-radius: 20px;
+    border: none;
+
+    cursor: pointer;
+
+    background-position: 38px 35px;
+  }
+  .registry__field[placeholder] {
+    font-size: 24px;
+    line-height: 24px;
+    color: rgba(0,0,0, 0.3);
+  }
+
 }

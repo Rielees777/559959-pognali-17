@@ -6,6 +6,7 @@
 
   background-image: url(/source/img/about-mobile@1x.png);
   background-repeat: no-repeat;
+  background-size: 292px 352px;
   background-color: @main-color;
 
   border-bottom-left-radius: 25px;
@@ -32,4 +33,41 @@
 .about__text-1 {
   width: 210px;
   font-weight: bold;
+}
+@media (min-width: @tablet-width){
+  .about {
+    margin: 0;
+    padding-top: 93px;
+    padding-bottom: 70px;
+    padding-left: 50px;
+
+    background-image: url(/source/img/about-tablet@1x.png);
+    background-repeat: no-repeat;
+    background-size: 376px 548px;
+    background-position: 380px 100px;
+    background-color: @second-color;
+
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+
+    font-family: @main-font;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .about__title {
+
+    font-size: 45px;
+    line-height: 45px;
+
+  }
+  .about__text {
+    width: 300px;
+    font-size: 28px;
+    line-height: 33px;
+  }
+  .about__text-1 {
+    width: 310px;
+    font-size: 21px;
+    line-height: 25px;
+  }
 }

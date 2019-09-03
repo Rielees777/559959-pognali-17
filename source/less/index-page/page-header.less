@@ -1,30 +1,37 @@
 body {
+  min-width: 320px;
+  height: 560px;
   .offset();
+
+  position: absolute;
+  background-color: #161c36;
+  background-image: url(/source/img/globe-back-mobile@1x.jpg);
+  background-repeat: no-repeat;
 }
 .page-header {
+
   .offset();
-  width: 320px;
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo {
   padding: 0 25px;
-}
-.page-header__logo {
-  padding-top: 25px;
-  position: absolute;
-  background-image: url(/source/img/globe-back-mobile@1x.jpg);
-  background-repeat: no-repeat;
 
 }
+
 .page-header__main-nav {
 
   .offset();
-  padding-top: 25px;
+
   background-color: @main-color;
 }
 .page-header__toggle {
+  position: absolute;
+  top: 25px;
+  left: 270px;
   .offset();
-  padding-left: 270px;
   padding-top: 5px;
 
   border: none;
@@ -34,28 +41,36 @@ body {
 
 }
 .site-menu {
-  display: none;
   .offset();
   position: absolute;
+  top: 70px;
+  left: 0;
+  padding-top: 20px;
   padding-bottom: 80px;
 
   list-style: none;
   background-color: #ffffff;
   z-index: 999;
 }
-.site-menu__title {
-  width: 320px;
-  .offset();
-  margin-bottom: 60px;
-
+.site-menu__about,
+.site-menu__directions,
+.site-menu__companions {
+  text-align: center;
+}
+.site-menu__link {
+  text-decoration: none;
   color: @main-color;
+
+  .offset();
+
+  margin-bottom: 5px;
+
   font-family: @main-font;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  text-align: center;
-}
 
+}
 .site-menu__button {
   width: 270px;
   height: 50px;
@@ -66,14 +81,14 @@ body {
   .offset();
   padding: 0 25px;
 }
-.site-menu__item {
+.site-menu__contacts {
   padding-left: 75px;
   margin-bottom: 23px;
 
   text-align: left;
 
 }
-.site-menu__item a{
+.site-menu__contacts--link{
   color: @main-color;
 }
 .social__list {
@@ -117,4 +132,93 @@ body {
   background-size: 18px 18px;
   background-position: 13px 13px;
   background-repeat: no-repeat;
+}
+@media (min-width: @tablet-width) {
+  body {
+    background-color: #182044;
+    background-image:url(/source/img/globe-back-tablet@1x.jpg);
+    background-repeat: no-repeat;
+    background-size: 1479px auto;
+    background-position: -350px 300px;
+  }
+  .logo {
+    padding: 0 40px;
+
+  }
+  .page-header__toggle {
+    left: 320px;
+    border: none;
+    background:none;
+  }
+  .site-menu {
+    width: auto;
+    .offset();
+    padding: 40px 0;
+    position: absolute;
+    padding-top: 20px;
+    padding-bottom: 80px;
+
+    list-style: none;
+    background-color: #ffffff;
+    z-index: 999;
+  }
+
+  .site-menu__about,
+  .site-menu__directions,
+  .site-menu__companions {
+
+    text-align: left;
+  }
+  .site-menu__companions {
+    margin-bottom: 150px;
+  }
+  .site-menu__link {
+    padding-left: 100px;
+    margin-bottom: 30px;
+
+    font-size: 60px;
+    line-height: 70px;
+  }
+  .site-menu__contacts {
+    padding-left: 150px;
+    margin-bottom: 23px;
+  }
+  .site-menu__social {
+    padding-left: 30px;
+  }
+  .social__link--facebook {
+    left: 60px;
+    width: 50px;
+    height: 40px;
+
+    background-size: 11px 21px;
+    background-position: 17px 10px;
+  }
+  .social__link--vkontakte {
+    left: 105px;
+    width: 50px;
+    height: 40px;
+
+    background-size: 23px 12px;
+    background-position: 11px 16px;
+  }
+  .social__link--instagram {
+    left: 150px;
+    width: 50px;
+    height: 40px;
+
+    background-size: 18px 18px;
+    background-position: 13px 13px;
+
+  }
+  .site-menu__button {
+    position: absolute;
+    top: -60px;
+    left: 500px;
+    width: 189px;
+    height: 50px;
+
+    .offset();
+  }
+
 }

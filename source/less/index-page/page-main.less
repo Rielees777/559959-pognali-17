@@ -1,16 +1,7 @@
 .page-main {
   position: relative;
-  width: 320px;
 
 }
-
-.head-content {
-  height: 560px;
-  background-image: url(/source/img/globe-back-mobile@1x.jpg);
-}
-
-
-
 
 .head-content__title {
   width: 270px;
@@ -23,15 +14,13 @@
   font-size: 36px;
   line-height: 40px;
   text-align: center;
-
-
 }
 .head-content__contacts {
   display: flex;
 
   padding: 0 25px;
   padding-top: 280px;
-   background-image: url(/source/img/traveller-illustration-mobile@1x.png);
+  background-image: url(/source/img/traveller-illustration-mobile@1x.png);
   background-repeat: no-repeat;
   background-size: 192px 255px;
   background-position: 80px 50px;
@@ -65,4 +54,31 @@
   background-size: 18px 14px;
   background-repeat: no-repeat;
   background-position: 11px 13px;
+}
+@media (min-width: @tablet-width) {
+  .head-content__title {
+    width: 620px;
+    padding: 0 40px;
+    padding-top: 50px;
+
+    font-size: 60px;
+    line-height: 70px;
+  }
+  .head-content__header-phone,
+  .head-content__header-email {
+    .hide();
+  }
+  .head-content__header-login {
+    position: absolute;
+    top: -30px;
+    left: 480px;
+  }
+  .head-content__contacts {
+    padding: 0 25px;
+    padding-top: 500px;
+    background-image: url(/source/img/traveller-illustration-tablet@1x.png);
+    background-size: 372px 451px;
+    background-position: 285px 50px;
+  }
+
 }

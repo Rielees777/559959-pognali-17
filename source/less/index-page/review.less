@@ -1,6 +1,5 @@
 .review {
-  width: 320px;
-  margin-top: -90px;
+  margin-top: -20px;
   padding-top: 20px;
   padding-bottom: 20px;
 
@@ -24,4 +23,28 @@
   padding-left: 50px;
 
   font-weight: bold;
+}
+@media (min-width: @tablet-width) {
+  .review {
+    .offset();
+    margin-top: -450px;
+    margin-bottom: 250px;
+
+    background: none;
+  }
+  .rewiew__text {
+    width: 285px;
+    padding-left: 50px;
+
+    font-size: 28px;
+    line-height: 33px;
+  }
+  .rewiew__author {
+    width: 285px;
+    padding-left: 50px;
+
+    font-size: 21px;
+    line-height: 25px;
+  }
+
 }

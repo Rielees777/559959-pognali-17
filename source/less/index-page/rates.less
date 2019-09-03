@@ -1,4 +1,5 @@
 .rates {
+  position: relative;
   padding: 0 25px;
   padding-bottom: 30px;
 
@@ -7,10 +8,10 @@
   border-bottom-right-radius: 25px;
 }
 .rates__title {
-  position: relative;
+
+  width: 115px;
   margin: 0;
   padding-top: 50px;
-  padding-right: 200px;
   padding-left: 25px;
 
   font-family: @main-font;
@@ -18,7 +19,7 @@
   line-height: 24px;
   color:#ff8d30;
 }
-.rates__title::after {
+.rates::after {
   content: "";
   position: absolute;
   top: 30px;
@@ -28,6 +29,7 @@
 
   background-image: url("/source/img/rates@1x.png");
   background-size: 99px 99px;
+  z-index: 2;
 }
 .rates__list {
   padding: 0;
@@ -43,16 +45,18 @@
   line-height: 22px;
   color: #444444;
 }
-.rates__item p:nth-child(1) {
+.rates__text {
   width: 185px;
   margin: 0;
   padding-top: 15px;
   padding-bottom: 15px;
 
-  border-top: 1px solid #e1e3e9;
-  border-bottom: 1px solid #e1e3e9;
+  border-top: 1px solid rgba(0,0,0, 0.05);
+  border-bottom: 1px solid rgba(0,0,0, 0.05);
 }
-.rates__item p:nth-child(2) {
+.rates__num-1,
+.rates__num-2,
+.rates__num-3 {
   display: flex;
   justify-content: center;
   align-items:center;
@@ -63,7 +67,6 @@
   color: #ffffff;
 
   border-radius: 50%;
-
 }
 .rates__num-1 {
   background-color: #ffa530;
@@ -84,4 +87,75 @@
 
   border: none;
   background: none;
+}
+@media (min-width: @tablet-width) {
+  .rates{
+    padding: 0 40px;
+    padding-bottom: 87px;
+  }
+  .rates::before {
+    content: "";
+    position: absolute;
+    width: 198px;
+    height: 285px;
+    top: 140px;
+    left: 550px;
+    border-radius: 15px;
+
+    background-color: #e2e5f2;
+
+    z-index: 1;
+  }
+  .rates__title {
+    width: auto;
+    margin-bottom: 80px;
+
+    font-size: 45px;
+    line-height: 45px;
+    text-align: center;
+  }
+  .rates::after {
+    top: 400px;
+    left: 620px;
+
+
+    z-index: 4;
+  }
+  .rates__item {
+    padding: 0;
+    justify-content: flex-start;
+  }
+  .rates__num-1,
+  .rates__num-2,
+  .rates__num-3 {
+    width: 67px;
+    height: 67px;
+    order: 0;
+
+    margin: 0;
+
+    font-size: 28px;
+    line-height: 28px;
+  }
+  .rates__text{
+    width: 565px;
+    display: flex;
+    justify-content: space-between;
+    order: 1;
+    align-self: center;
+    padding-left: 25px;
+    padding-top: 16px;
+    padding-bottom: 17px;
+
+    font-size: 28px;
+    line-height: 33px;
+    z-index: 10;
+  }
+  .rates__button{
+    padding-top: 60px;
+    padding-left: 90px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

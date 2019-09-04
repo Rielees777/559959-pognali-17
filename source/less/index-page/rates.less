@@ -159,3 +159,29 @@
     line-height: 20px;
   }
 }
+@media (min-width: @desktop-width) {
+  .rates{
+    padding: 0 132px;
+    padding-bottom: 87px;
+  }
+  .rates__text{
+    width: 815px;
+  }
+  .rates::before {
+    content: "";
+    position: absolute;
+    width: 444px;
+    height: 300px;
+    top: 125px;
+    left: 750px;
+  }
+  .rates::after {
+    top: 175px;
+    left: 1100px;
+    width: 198px;
+    height: 198px;
+
+    background-image: url("/source/img/rates@1x.png");
+    background-size: 198px 198px;
+  }
+}

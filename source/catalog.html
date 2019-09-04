@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Погнали</title>
   </head>
   <body>
@@ -16,11 +17,13 @@
               <path fill="#ffffff" d="M23.5,8h-22C0.7,8,0,8.7,0,9.5S0.7,11,1.5,11h22c0.8,0,1.5-0.7,1.5-1.5S24.3,8,23.5,8z"/>
             </g>
           </svg></button>
-        <ul class="page-header__menu site-menu">
-          <li class="site-menu__title">О сервисе направления попутчики</li>
+        <ul class="page-header__menu site-menu hide">
+          <li class="site-menu__about"><a class="site-menu__link" href="#about">О сервисе</a></li>
+          <li class="site-menu__directions"><a class="site-menu__link" href="#directions">Направления</a></li>
+          <li class="site-menu__companions"><a class="site-menu__link" href="#companions">Попутчики</a></li>
           <li class="site-menu__btn"><button class="button site-menu__button" type="button">Авторизация</button></li>
-          <li class="site-menu__item"><a class="phone" href="tel:88005558628">8 800 555-86-28</a></li>
-          <li class="site-menu__item"><a class="email" href="email:mail@htmlacademy.ru">mail@htmlacademy.ru</a></li>
+          <li class="site-menu__contacts"><a class="phone site-menu__contacts--link" href="tel:88005558628">8 800 555-86-28</a></li>
+          <li class="site-menu__contacts"><a class="email site-menu__contacts--link" href="email:mail@htmlacademy.ru">mail@htmlacademy.ru</a></li>
           <li class="site-menu__social social">
             <ul class="social__list">
               <li class="social__item"><a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке"></a></li>
@@ -36,7 +39,7 @@
       <ul class="page-catalog__travelers-list travelers-list">
         <li class="travelers-list__item">
           <div class="travelers-list__title">
-            <img src="/source/img/firsova-mobile@1x.jpg" width="70" height="70" alt="Путешественник">
+            <img class="travelers-list__img"src="/source/img/firsova-mobile@1x.jpg" width="70" height="70" alt="Путешественник">
             <div class="travelers-list__head">
               <p class="travelers-list__name">Таня Фирсова </p>
               <p class="travelers-list__subscribers">1,5 М</p>
@@ -45,10 +48,13 @@
 
           <p class="travelers-list__item-tags">#30Ж #ПП #Фитнес #пляж #авокадо #смузи</p>
           <div class="travelers-list__item-countries">
-            <p>Хочет посетить:</p>
-            <div class="shri-lanka-flag">Шри ланка</div>
-            <div class="tailand-flag">Тайланд</div>
-            <div class="seishels-flag">Сейшелы</div>
+            <p class="travelers-list__want">Хочет посетить:</p>
+            <div class="travelers-list__flags">
+              <div class="travelers-list__flag shri-lanka-flag">Шри ланка</div>
+              <div class="travelers-list__flag tailand-flag">Тайланд</div>
+              <div class="travelers-list__flag seishels-flag">Сейшелы</div>
+            </div>
+
           </div>
           <div class="travelers-list__item-descr">транспорт: <span>левел:</span></div>
           <div class="travelers-list__ways">
@@ -101,7 +107,7 @@
 
         <li class="travelers-list__item">
           <div class="travelers-list__title">
-            <img src="/source/img/demin-mobile@1x.jpg" width="70" height="70" alt="Путешественник">
+            <img class="travelers-list__img" src="/source/img/demin-mobile@1x.jpg" width="70" height="70" alt="Путешественник">
             <div class="travelers-list__head">
               <p class="travelers-list__name">Петя Демин</p>
               <p class="travelers-list__subscribers">150</p>
@@ -110,9 +116,11 @@
 
           <p class="travelers-list__item-tags">#Бургер #бар #футбол #концерт #крафт</p>
           <div class="travelers-list__item-countries">
-            <p>Хочет посетить:</p>
-            <div class="belgium-flag">Бельгия</div>
-            <div class="czech-flag">Чехия</div>
+            <p class="travelers-list__want">Хочет посетить:</p>
+            <div class="travelers-list__flags">
+              <div class="travelers-list__flag belgium-flag">Бельгия</div>
+              <div class="travelers-list__flag czech-flag">Чехия</div>
+            </div>
           </div>
           <div class="travelers-list__item-descr">транспорт: <span>левел:</span></div>
           <div class="travelers-list__ways">
@@ -164,7 +172,7 @@
         </li>
         <li class="travelers-list__item">
           <div class="travelers-list__title">
-            <img src="/source/img/smolov-mobile@1x.jpg" width="70" height="70" alt="Путешественник">
+            <img class="travelers-list__img" src="/source/img/smolov-mobile@1x.jpg" width="70" height="70" alt="Путешественник">
             <div class="travelers-list__head">
               <p class="travelers-list__name">Марк Смолов </p>
               <p class="travelers-list__subscribers">1700</p>
@@ -173,10 +181,12 @@
 
           <p class="travelers-list__item-tags">#рэп #тату #хайпбист #кроссовки #суприм </p>
           <div class="travelers-list__item-countries">
-            <p>Хочет посетить:</p>
-            <div class="usa">США</div>
-            <div class="australia-flag">Австралия</div>
-            <div class="dominikans-flag">Доминиканы</div>
+            <p class="travelers-list__want">Хочет посетить:</p>
+            <div class="travelers-list__flags">
+              <div class="travelers-list__flag usa">США</div>
+              <div class="travelers-list__flag australia-flag">Австралия</div>
+              <div class="travelers-list__flag dominikans-flag">Доминиканы</div>
+            </div>
           </div>
           <div class="travelers-list__item-descr">транспорт: <span>левел:</span></div>
           <div class="travelers-list__ways">
@@ -229,7 +239,7 @@
 
         <li class="travelers-list__item">
           <div class="travelers-list__title">
-            <img src="/source/img/rogovaya-mobile@1x.jpg" width="70" height="70" alt="Путешественник">
+            <img class="travelers-list__img" src="/source/img/rogovaya-mobile@1x.jpg" width="70" height="70" alt="Путешественник">
             <div class="travelers-list__head">
               <p class="travelers-list__name">Лариса Роговая</p>
               <p class="travelers-list__subscribers">23</p>
@@ -238,9 +248,11 @@
 
           <p class="travelers-list__item-tags">#образование #карьера #учеба #линкэдин</p>
           <div class="travelers-list__item-countries">
-            <p>Хочет посетить:</p>
-            <div class="britain-flag">Великобритания</div>
-            <div class="germany-flag">Германия</div>
+            <p class="travelers-list__want">Хочет посетить:</p>
+            <div class="travelers-list__flags">
+              <div class="travelers-list__flag britain-flag">Великобритания</div>
+              <div class="travelers-list__flag germany-flag">Германия</div>
+            </div>
           </div>
           <div class="travelers-list__item-descr">транспорт: <span>левел:</span></div>
           <div class="travelers-list__ways">

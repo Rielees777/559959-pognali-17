@@ -1,5 +1,4 @@
 .page-catalog {
-  width: 320px;
   padding-bottom: 15px;
 
   background-color: #edeff6;
@@ -24,6 +23,7 @@
   list-style: none;
 }
 .travelers-list__item {
+  min-width: 220px;
   padding: 25px;
   margin-bottom: 10px;
 
@@ -35,7 +35,7 @@
   display: flex;
 
 }
-.travelers-list__title img {
+.travelers-list__img {
   border-radius: 50%;
 }
 .travelers-list__head {
@@ -154,4 +154,87 @@
   background-size: 10px 20px;
   background-position: 60px 15px;
   cursor: pointer;
+}
+@media (min-width: @tablet-width) {
+  .travelers-list__item {
+    position: relative;
+    min-width: 688px;
+    padding: 35px;
+    padding-bottom: 250px;
+    margin-bottom: 10px;
+
+    border-radius: 25px;
+    background-color: #ffffff;
+  }
+  .travelers-list__img {
+    border-radius: 15px;
+  }
+  .travelers-list__item-tags {
+    width: 240px;
+    position: absolute;
+    top: 130px;
+    left: 200px;
+  }
+  .travelers-list__button {
+    position: absolute;
+    top: 200px;
+    left: 200px;
+  }
+  .travelers-list__ways {
+    position: absolute;
+    top: 0;
+    left: 700px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .travelers-list__item-level{
+    .offset();
+  }
+  .travelers-list__way {
+    background-color: #ffffff;
+  }
+  .travelers-list__item-descr {
+    display: none;
+  }
+  .travelers-list__item-countries {
+    position: absolute;
+    top: 250px;
+  }
+  .travelers-list__flags {
+    display: flex;
+    justify-content: space-between;
+  }
+  .travelers-list__flag {
+    margin-right: 20px;
+    font-family: @main-font;
+    font-size: 20px;
+    line-height: 30px;
+    color: #1d2e5b;
+    text-transform: uppercase;
+  }
+}
+@media (min-width: @desktop-width) {
+  .travelers-list__item {
+    min-width: 950px;
+  }
+  .travelers-list__ways {
+    position: absolute;
+    top: 200px;
+    left: 700px;
+    flex-direction:row;
+    align-items: center;
+  }
+  .travelers-list__want {
+    display: none;
+  }
+  .travelers-list__item-level{
+    margin-left: 30px;
+  }
+  .travelers-list__flags {
+    flex-direction: column;
+  }
+  .travelers-list__item-countries{
+    top: 40px;
+    left: 700px;
+  }
 }

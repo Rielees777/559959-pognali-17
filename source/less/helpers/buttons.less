@@ -84,3 +84,41 @@
 
   background-image: url(/source/img/triangle-arrow-right.svg);
 }
+@media (min-width: @tablet-width) {
+  .phone,
+  .email {
+    font-size: 28px;
+    line-height: 28px;
+  }
+  .phone::before {
+
+    width: 68px;
+    height: 68px;
+    top: -20px;
+    left: -90px;
+
+    background-position: 20px 20px;
+    background-size: 27px 27px;
+  }
+  .email::before {
+    width: 68px;
+    height: 68px;
+    top: -20px;
+    left: -90px;
+
+    background-position: 20px 23px;
+    background-size: 27px 20px;
+  }
+  .btn {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .btn::before {
+    top: 25px;
+    left: 580px;
+  }
+}
+@media (min-width: @desktop-width) {
+
+}

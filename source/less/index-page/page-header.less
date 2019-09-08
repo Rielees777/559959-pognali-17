@@ -1,44 +1,34 @@
 body {
+  .offset();
   min-width: 320px;
   height: 560px;
-  .offset();
-
   position: absolute;
   background-color: #161c36;
   background-image: url(/source/img/globe-back-mobile@1x.jpg);
   background-repeat: no-repeat;
 }
 .page-header {
-
   .offset();
   padding-top: 25px;
   display: flex;
   justify-content: space-between;
 }
-
 .logo {
   padding: 0 25px;
-
 }
-
 .page-header__main-nav {
-
   .offset();
-
   background-color: @main-color;
 }
 .page-header__toggle {
+  .offset();
   position: absolute;
   top: 25px;
   left: 270px;
-  .offset();
   padding-top: 5px;
-
   border: none;
   background:none;
-
   cursor: pointer;
-
 }
 .site-menu {
   .offset();
@@ -47,24 +37,18 @@ body {
   left: 0;
   padding-top: 20px;
   padding-bottom: 80px;
-
   list-style: none;
   background-color: #ffffff;
   z-index: 999;
 }
-.site-menu__about,
-.site-menu__directions,
-.site-menu__companions {
+.site-menu__item {
   text-align: center;
 }
 .site-menu__link {
+  .offset();
   text-decoration: none;
   color: @main-color;
-
-  .offset();
-
   margin-bottom: 5px;
-
   font-family: @main-font;
   font-size: 30px;
   line-height: 36px;
@@ -74,7 +58,6 @@ body {
 .site-menu__button {
   width: 270px;
   height: 50px;
-
   margin-bottom: 70px;
 }
 .site-menu__btn {
@@ -84,23 +67,20 @@ body {
 .site-menu__contacts {
   padding-left: 75px;
   margin-bottom: 23px;
-
   text-align: left;
-
 }
-.site-menu__contacts--link{
+.site-menu__link--phone,
+.site-menu__link--email{
   color: @main-color;
 }
 .social__list {
   display: flex;
   position: relative;
   padding: 0;
-
   list-style: none;
 }
 .social__link {
   position: absolute;
-
   opacity: 0.3;
 }
 .site-menu__social {
@@ -158,19 +138,14 @@ body {
     position: absolute;
     padding-top: 20px;
     padding-bottom: 80px;
-
     list-style: none;
     background-color: #ffffff;
     z-index: 999;
   }
-
-  .site-menu__about,
-  .site-menu__directions,
-  .site-menu__companions {
-
+  .site-menu__item {
     text-align: left;
   }
-  .site-menu__companions {
+  .site-menu__item:nth-child(3) {
     margin-bottom: 150px;
   }
   .site-menu__link {
@@ -182,7 +157,7 @@ body {
   }
   .site-menu__contacts {
     padding-left: 150px;
-    margin-bottom: 23px;
+    margin-bottom: 40px;
   }
   .site-menu__social {
     padding-left: 30px;
@@ -191,7 +166,6 @@ body {
     left: 60px;
     width: 50px;
     height: 40px;
-
     background-size: 11px 21px;
     background-position: 17px 10px;
   }
@@ -199,7 +173,6 @@ body {
     left: 105px;
     width: 50px;
     height: 40px;
-
     background-size: 23px 12px;
     background-position: 11px 16px;
   }
@@ -207,7 +180,6 @@ body {
     left: 150px;
     width: 50px;
     height: 40px;
-
     background-size: 18px 18px;
     background-position: 13px 13px;
 
@@ -243,5 +215,4 @@ body {
   .page-header__toggle {
     display: none;
   }
-
 }

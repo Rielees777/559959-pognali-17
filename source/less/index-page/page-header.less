@@ -23,12 +23,38 @@ body {
 .page-header__toggle {
   .offset();
   position: absolute;
-  top: 25px;
-  left: 270px;
-  padding-top: 5px;
+  width: 54px;
+  height: 38px;
+  top: 15px;
+  right: 0;
+  display: block;
   border: none;
-  background:none;
+  background: none;
   cursor: pointer;
+}
+
+.page-header__main-nav--closed .page-header__toggle::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  width: 26px;
+  height: 13px;
+  background-image: url(/source/img/menu.svg);
+  background-repeat: no-repeat;
+  background-size: 26px 13px;
+  background-position: 0 0;
+}
+.page-header__main-nav--opened .page-header__toggle {
+  position: absolute;
+  top: 20px;
+  right: 28px;
+  width: 26px;
+  height: 26px;
+  background-image: url(/source/img/menu-close.svg);
+  background-repeat: no-repeat;
+  background-size: 26px 26px;
+  background-position: 0 0;
 }
 .site-menu {
   .offset();
@@ -44,6 +70,7 @@ body {
 .site-menu__item {
   text-align: center;
 }
+
 .site-menu__link {
   .offset();
   text-decoration: none;
@@ -113,6 +140,12 @@ body {
   background-position: 13px 13px;
   background-repeat: no-repeat;
 }
+@media (max-width: @mobile-width-only) {
+  .page-header__main-nav--closed .site-menu {
+    display: none;
+  }
+}
+
 @media (min-width: @tablet-width) {
   body {
     background-color: #182044;
@@ -201,6 +234,7 @@ body {
   }
 
 }
+
 @media (min-width: @desktop-width) {
   body {
     background-image: url(/source/img/globe-back-desktop@1x.jpg);
